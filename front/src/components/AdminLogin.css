@@ -1,0 +1,79 @@
+/* Paleta de colores */
+:root {
+    --background-light: #EFD9B4;
+    --primary-color: #D6A692;
+    --text-light: #A39081;
+    --text-dark: #292522;
+    --button-hover: #4D6160;
+  }
+  
+  /* Contenedor principal */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-light);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Título */
+  .login-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+  }
+  
+  /* Formulario */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Inputs */
+  .login-input {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid var(--text-light);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-input:focus {
+    border-color: var(--text-dark);
+  }
+  
+  /* Botón */
+  .login-button {
+    font-size: 16px;
+    padding: 10px;
+    background-color: var(--text-dark);
+    color: var(--background-light);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Mensaje de error */
+  .login-error {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-dark);
+    text-align: center;
+  }
+  
